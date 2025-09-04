@@ -1,0 +1,69 @@
+/* The style of the webpage when it is displayed on small screens of 1200px size or less*/
+@media (max-width: 1200px) {
+  .sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  background-color: white;
+  width: 72px;
+  z-index: 200;
+  padding-top: 5px;
+}
+
+.sidebar-link {
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+.sidebar-link img {
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.sidebar-link div {
+  font-family: Roboto, Arial;
+  font-size: 10px;
+}
+}
+
+/* The styyle of the webpage when it is displayed on larger screens of 1200px size or more*/
+@media (min-width: 1201px) {
+  .sidebar {
+    width: 130px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    padding-top: 25px;
+    padding-left: 20px;
+  }
+
+  .sidebar-link img {
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  .sidebar-link div {
+    font-family: Roboto, Arial;
+    font-size: 10px;
+  }
+
+  .sidebar-link {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
